@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Armaan - Student Portfolio</title>
+    <link rel="stylesheet" href="<link rel="preconnect href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height:80px;
+        background-color: #2355e623;
+      }
+
+      nav ul{
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li{
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover{
+        color: rgb(127, 127, 220);
+        font-size: 1.05rem;
+      }
+
+
+      .left{
+        font-size: 2rem;
+      }
+      .firstsection{
+        display: flex;
+        justify-content: space-around;
+        margin: 23px 0;
+        align-items: center;
+      }
+      .firstsection>div{
+        width: 35%;
+      }
+
+      .leftsection{
+        
+        font-size: 2.5rem;
+        width: 34px;
+        margin: 70px;
+        top: 50px;
+      }
+
+      .rightsection img{
+        width: 100%;
+        margin: 10px;
+        top: 20px;
+        margin-right: 40px;
+      }
+
+      .purple{
+        color: #945dc7;
+      }
+
+      #element{
+        color: #945dc7 ;
+      }
+
+      .container {
+        position: relative;
+        max-width: 200px; /* Maximum width */
+        margin: 0 20px; /* Center it */
+        height: 300px;
+        margin-left: 50px;
+      }
+  
+      .container img{
+        border-radius: 546px;
+      }
+
+      .container .content {
+        position: absolute; /* Position the background text */
+        bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+        color: #f1f1f1; /* Grey text */
+        width: 100%; /* Full width */
+        /* padding:  Some padding */
+        height: 100%;
+        border-radius: 546px;
+      }
+
+      .secondsection{
+        max-width: 80vw;
+        margin: auto;
+      }
+
+      main hr{
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;margin: 40px 84px;
+      }
+
+      .skillContainer{
+        height: 80vh;
+        display: flex;
+        justify-content: space-evenly;
+        padding:50px;
+        text-shadow: 2px 2px #32161678;
+      }
+
+      
+      .skill1{
+        height: 60%;
+        width: 20%;
+        background-color: rgb(229, 177, 113);
+        box-sizing: border-box;
+        padding: 20px;
+        border-radius: 50px;
+        box-shadow: 0px 0px 5px 1px #e6cfad;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .skill1:hover{
+        background-color: #8a7a61;
+        font-size: 1.2rem;
+      }
+
+      .skill2{
+        height: 60%;
+        width: 20%;
+        background-color: rgb(229, 177, 113);
+        box-sizing: border-box;
+        padding: 20px;
+        border-radius: 50px;
+        box-shadow: 0px 0px 5px 1px #e6cfad;display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+      }
+      .skill2:hover{
+        background-color: #8a7a61;
+        font-size: 1.2rem;
+      }
+      .skill3{
+        height: 60%;
+        width: 20%;
+        background-color: rgb(229, 177, 113);
+        box-sizing: border-box;
+        padding: 20px;
+        border-radius: 50px;
+        box-shadow: 0px 0px 5px 1px #e6cfad;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .skill3:hover{
+        background-color: #8a7a61;
+        font-size: 1.2rem;
+      }
+      .skill4{
+        height: 60%;
+        width: 20%;
+        background-color: rgb(229, 177, 113);
+        box-sizing: border-box;
+        padding: 20px;
+        border-radius: 50px;
+        box-shadow: 0px 0px 5px 1px #e6cfad;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .skill4:hover{
+        background-color: #8a7a61;
+        font-size: 1.2rem;
+      }
+
+      .thirdsection{
+      max-width: 80vw;
+      margin: auto;
+      }
+      .projectsContainer{
+        height: 90vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 419px;
+        background-color: #45586091;
+      }
+
+        #project1{
+          height: 40%;
+          width: 40%;
+          /* background-color: #455860; */
+          background-color: beige;
+          margin: 10px;
+          border: 1px solid black;
+          box-sizing: border-box;
+          color: #455860;
+          border-radius: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        #project1:hover{
+          font-size: 1.2rem;
+          background-color: rgb(143, 143, 126);
+        }
+
+        #project2{
+          height: 40%;
+          width: 40%;
+          background-color: beige;
+          margin: 10px;
+          border: 1px solid black;
+          box-sizing: border-box;
+          color: #455860;
+          border-radius: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        #project2:hover{
+          font-size: 1.2rem;
+          background-color: rgb(143, 143, 126);
+        }
+
+        #project3{
+          height: 40%;
+          width: 40%;
+          /* background-color: #455860; */
+          background-color: beige;
+          margin: 10px;
+          border: 1px solid black;
+          box-sizing: border-box;
+          color: #455860;
+          border-radius: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        #project3:hover{
+          font-size: 1.2rem;
+          background-color: rgb(143, 143, 126);
+        }
+
+        #project4{
+          height: 40%;
+          width: 40%;
+          background-color: beige;
+          margin: 10px;
+          border: 1px solid black;
+          box-sizing: border-box;
+          color: #455860;
+          border-radius: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        #project4:hover{
+          font-size: 1.2rem;
+          background-color: rgb(143, 143, 126);
+        }
+
+        .fourthsection{
+          max-width: 80vw;
+          margin: auto;
+          
+        }
+      
+        .resumeintro{
+          margin: 20px;
+          box-sizing: border-box;
+          padding: 20px ;
+          font-size: large;
+          font-size: x-large;
+        }
+
+        /* Style buttons */
+.btn {
+  background-color: #164c81;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+.fifthsection{
+      max-width: 80vw;
+      margin: auto;
+      
+}
+.contactcontainer{
+  display: flex;
+  margin: auto;
+  padding: 15px;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+.footer{
+  width: 100vw;
+  height: 30vh;
+  background-color: rgba(0, 0, 0, 0.488);
+  display: flex;
+  box-sizing: border-box;
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+  flex-direction: row;
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <header id="back_to_head">
+      <nav>
+        <div class="left"></div><h2 style="margin-right: 300px;">Armaan's Portfolio</h2></div>
+        <div class="right">
+            <ul>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Resume">Resume</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+
+
+    <main>
+
+
+      
+
+
+        <section class="firstsection">
+            <div class="leftsection"><h2 id="About"></h2>
+                Hi, My name is <span class="purple">Armaan</span> and I am a 
+                passionate <br>
+                <span id="element"></span>
+                <br><br>
+                <div class="container">
+                  <img src="Armaan_photo.png" alt="Armaan Photo" style="width:100%;">
+                  <div class="content"></div>
+                </div>
+            </div>
+            <div class="rightsection">
+               <img src="developer.png" alt="Developer png">
+            </div>
+        </section>
+
+        <hr>
+        <section class="secondsection">
+          <h1 id="Skills">Skills</h1>
+          
+          <div ><div>
+            <div class="skillContainer">
+              <div class="skill1">
+                <h3>Coding Languages</h3><br>
+                <img src="prog_lang.png" alt="Image1" width="50%" height="30%" style="margin-left: 47px;">
+                <ul style="margin-left: 25px; padding: 10px;">
+                  <li>C</li>
+                  <li>C++</li>
+                  <li>Python</li>
+                </ul>
+              </div>
+              <div class="skill2">
+                <h3>Web Development</h3><br>
+                <img src="web_dev.png" alt="Image2" width="65%" height="30%" style="margin-left: 30px; border-radius: 20px;">
+                <ul style="margin-left: 25px; padding: 10px;">
+                  Front-End
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+              <div class="skill3">
+                <h3>Database Management</h3><br>
+                <img src="database.jpg" alt="Image3" width="65%" height="30%" style="margin-left: 30px; border-radius: 20px;"><br>
+                <section>About databases, SQL and MySQL</section>
+              </div>
+              <div class="skill4">
+                <h3>Coding Languages</h3><br>
+                <img src="ui_ux.png" alt="Image4" width="50%" height="30%" style="margin-left: 47px; border-radius: 15px;">
+                <ul style="margin-left: 25px; padding: 10px;">
+                  <li>Figma</li>
+                  <li>Sketch</li>
+                  <li>Adobe XD</li>
+                </ul>
+              </div>
+          </div>
+
+            <div style="display: flex; justify-content: end; box-sizing: border-box;">
+              <img src="skills_photo.png" alt="skills image" width="10%" height="10%" style="border-radius: 96px; box-shadow: 0px 0px 5px 1px #3F51B5;" >
+            </div>
+          </div></div>
+        </section>
+
+        <hr>
+        
+        <section class="thirdsection">
+          <h1 id="Projects">Projects</h1>
+          <div class="projectsContainer">
+            <div id="project1">
+              <span style="padding: 5px;">Customer Relationship Manager</span>
+              <div><img src="p1.png" alt="photo" width="90%" height="70px" style="border-radius: 15px;" > </div>
+            </div>
+            <div id="project2">
+              <span style="padding: 5px;">Student Result Management System</span>
+              <div><img src="p2.png" alt="photo" width="90%" height="70px" style="border-radius: 15px;" > </div>
+            </div>
+            <div id="project3">
+              <span style="padding: 5px;">YouTube Transcript Summarizer</span>
+              <div><img src="p3.png" alt="photo" width="90%" height="70px" style="border-radius: 15px;" > </div>
+            </div>
+            <div id="project4">
+              <span style="padding: 5px;">Online Code Editor (JQuery)</span>
+              <div><img src="p4.png" alt="photo" width="90%" height="70px" style="border-radius: 15px;" > </div>
+            </div>
+          </div>
+        </section>
+
+        <hr>
+        
+        <section class="fourthsection">
+          <h1 id="Resume">Resume</h1>
+          <div class="resumeintro">
+            Welcome to my journey! Below, you'll find my detailed resume, showcasing my skills and qualifications. Feel free to download and explore my resume to learn more about my background and accomplishments.
+          </div>
+          <div style="display: flex; justify-content: center; margin: 15px; margin: 20px;">
+            <!-- Auto width -->
+            <div><button class="btn"><i class="fa fa-download"></i><a href="Armaan's CV.pdf" style="text-decoration: None; color: white;">  Download Resume</a></button></div></div>
+        </section>
+
+        <hr>
+
+        <section class="fifthsection">
+          <h1 id="Contact">Contact Me</h1>
+
+          <div class="contactContainer">
+            <ul id="Contactlist" style="list-style: none;">
+              <li>Email: contactme@gmail.com</li>
+              <li>LinkedIn: https://www.linkedin.com/in/armaan-mohammed-56767526b</li>
+              <li>GitHub: Armaan-0123</li>
+            </ul>
+          </div>
+
+        </section>
+    </main>
+    <br>
+    <footer>
+      <div class="footer">
+        Copyright &copy; All rights reserved; Armaan Mohammed
+        <a href="#back_to_head" style="text-decoration: none; color: blanchedalmond;">Back to Top</a>
+      </div>
+      
+    </footer>
+  </body>
+ 
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+   <!-- Setup and start animation! -->
+   <script>
+    var typed = new Typed('#element', {
+      strings: [ 'Web Developer','Web Designer','Graphic Designer'],
+      typeSpeed: 100,
+    });
+  </script>
+</html>
